@@ -1,1 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+button {
+  @apply cursor-pointer;
+}
+
+:root {
+  font-family: "Lato", "sans-serif";
+}
+
+@theme {
+  --font-display: "Lato", "sans-serif";
+  --color-dark-900: #210f37;
+  --color-dark-700: #0e2148;
+  --color-light-300: #feebf6;
+  --color-copy-600: #609966;
+  --color-copy-900: #40513b;
+  /* ... */
+}
